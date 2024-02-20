@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Accueil from './routes/Accueil';
+import Apropos from './routes/Apropos';
+import Logement from './routes/Logement';
+import Erreur from './routes/Erreur';
+import Header from './routes/composants/Header';
+import Footer from './routes/composants/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='container'>
+        <Header/>
+        <Routes>
+          <Route path="/" exact Component={Accueil} />
+          <Route path="/apropos" Component={Apropos} />
+          <Route path="/logement" Component={Logement} />
+          <Route path="/erreur" Component={Erreur}/>
+          {/*Si un lien quelquonque est entré, l'utilisateur est automatiquement redirigé vers la page d'erreur*/}
+          <Route path="*" Component={() => <Navigate to="/erreur" />} />
+        </Routes>
+        <Footer/>
+      </div>
+    </Router>
   );
 }
 
