@@ -1,0 +1,45 @@
+.error{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    h1{
+        color: #FF6060;
+        font-weight: 700;
+        font-size: 288px;
+    }
+    h2{
+        color: #FF6060;
+        font-weight: 500;
+        font-size: 36px;
+        text-align: center;
+        line-height: 1.5;
+    }
+    a{
+        margin-bottom: 136px;
+        margin-top: 136px;
+        p{
+            text-decoration: underline;
+            color: black;
+            font-weight: 500;
+            font-size: 18px;
+            white-space: nowrap;
+        }
+    }
+    
+}
+
+@media(max-width : 768px){
+    .error{
+        h1{
+            font-size: 96px;
+        }
+        h2{
+            font-size: 18px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+}
