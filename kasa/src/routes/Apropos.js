@@ -9,7 +9,7 @@ const Apropos = () => {
   return (
     <div className='main'>
       <Banner imageName="image2.png" isFilter={false}/>
-      <div className='collapse'>
+      <div className='infos_apropos'>
         <Collapse head='Fiabilité' description='Les annonces postées sur Kasa garantissent une fiabilité totale. 
         Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes'/>
 

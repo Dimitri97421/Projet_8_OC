@@ -44,6 +44,60 @@ header {
   }
 }
 
+// Composant Collapse
+
+.collapse{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  .summary{
+    display: flex;
+    width: 100%;
+    background: #FF6060;
+    align-items: center;
+    height: 52px;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 5px;
+    justify-content: space-between;
+    .text{
+      position: relative;
+      left: 10px;
+    }
+    .chevron{
+      position: relative;
+      width: 32px;
+      height: 32px;
+      filter: invert(100%);
+      cursor: pointer;
+      right: 10px;
+      transition: transform 0.5s ease;
+    }
+  }
+  p{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    background: #f6f6f6;
+    max-height: 0px;
+    animation: collapseAnimation 3s ease forwards;
+    overflow: hidden;
+    white-space: pre-line;
+  }
+}
+
+.open .chevron{
+  transform: rotate(-180deg);
+}
+
+@keyframes collapseAnimation {
+  to {
+    max-height: 999px;
+  }
+}
+
 footer{
   display: flex;
   flex-direction: column;

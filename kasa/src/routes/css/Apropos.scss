@@ -1,4 +1,4 @@
-.collapse{
+.infos_apropos{
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -6,55 +6,10 @@
     gap: 30px;
     margin-top: 38px;
     margin-bottom: 38px;
-    details{
-        display: flex;
-        width: 70%;
-        height: 52px;
-        transition: height 0.5s ease;
-        summary{
-            display: flex;
-            background: #FF6060;
-            align-items: center;
-            height: 52px;
-            color: white;
-            font-weight: 700;
-            font-size: 24px;
-            border-radius: 5px;
-            justify-content: space-between;
-            .text{
-                position: relative;
-                left: 10px;
-            }
-            img{
-                position: relative;
-                width: 32px;
-                height: 32px;
-                filter: invert(100%);
-                cursor: pointer;
-                right: 10px;
-                transition: transform 0.5s ease;
-            }
-        }
-        p{
-            margin: 0;
-            padding: 10px;
-            background: #f6f6f6;
-            border-radius: 5px;
-        }
-    }
-}
-
-.collapse details[open] summary img {
-    transform: rotate(-180deg);
-}
-
-.collapse details[open] {
-    height: auto;
-    transition: height 1s ease;
 }
 
 @media(max-width : 768px){
-    .collapse details{
+    .collapse{
         width: 100%;
     }
 }

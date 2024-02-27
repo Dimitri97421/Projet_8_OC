@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" exact Component={Accueil} />
           <Route path="/apropos" Component={Apropos} />
-          <Route path="/logement" Component={Logement} />
+          <Route path="/logement/:id" Component={Logement} />
           <Route path="/erreur" Component={Erreur}/>
           {/*Si un lien quelquonque est entré, l'utilisateur est automatiquement redirigé vers la page d'erreur*/}
           <Route path="*" Component={() => <Navigate to="/erreur" />} />

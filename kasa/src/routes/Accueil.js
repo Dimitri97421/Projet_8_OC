@@ -24,7 +24,7 @@ const Accueil = () => {
       <div className='gallery'>
         {/*Pour chaque logement, on récupère son titre et sa couverture puis on les utilise comme paramètre pour le composant Card*/}
         {logements.map(logement => (
-          <Link to='/logement' key={logement.id}>
+          <Link to={`/logement/${logement.id}`} key={logement.id}>
             <Card title={logement.title} cover={logement.cover} />
           </Link>
         ))}
