@@ -79,10 +79,10 @@ header {
     display: flex;
     align-items: center;
     margin: 0;
-    padding: 10px;
     background: #f6f6f6;
+    padding-left: 10px;
     max-height: 0px;
-    animation: collapseAnimation 3s ease forwards;
+    transition: 0.5s cubic-bezier(0, 1, 0, 1);
     overflow: hidden;
     white-space: pre-line;
   }
@@ -92,10 +92,10 @@ header {
   transform: rotate(-180deg);
 }
 
-@keyframes collapseAnimation {
-  to {
-    max-height: 999px;
-  }
+.open p{
+  max-height: 999px;
+  transition: max-height 0.5s ease-in-out;
+  padding: 10px;
 }
 
 footer{

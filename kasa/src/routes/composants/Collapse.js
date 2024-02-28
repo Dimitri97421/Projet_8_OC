@@ -15,9 +15,7 @@ const Collapse = ({ head, description }) => {
         <span className="text">{head}</span>
         <img className="chevron" src={chevron} alt="Chevron" onClick={renderCollapse}/>
       </div>
-      {isOpen && (
           <p>{Array.isArray(description) ? description.join('\n') : description}</p>
-      )}
     </div>
   );
 };
