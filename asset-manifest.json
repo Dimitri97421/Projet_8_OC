@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.4f356f8a.css",
-    "main.js": "/static/js/main.9ba37f96.js",
+    "main.js": "/static/js/main.de147951.js",
     "static/js/592.dad3ac87.chunk.js": "/static/js/592.dad3ac87.chunk.js",
     "static/media/image1.png": "/static/media/image1.73063797160e430c8689.png",
     "static/media/image2.png": "/static/media/image2.f9be8d71dc3155223b0b.png",
     "index.html": "/index.html",
     "static/media/chevron-up-solid.svg": "/static/media/chevron-up-solid.c17744bba2b4607e9b35e7c1e5af83de.svg",
     "main.4f356f8a.css.map": "/static/css/main.4f356f8a.css.map",
-    "main.9ba37f96.js.map": "/static/js/main.9ba37f96.js.map",
+    "main.de147951.js.map": "/static/js/main.de147951.js.map",
     "592.dad3ac87.chunk.js.map": "/static/js/592.dad3ac87.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4f356f8a.css",
-    "static/js/main.9ba37f96.js"
+    "static/js/main.de147951.js"
   ]
 }
