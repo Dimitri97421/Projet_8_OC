@@ -7,12 +7,8 @@ import logementsData from './json/logements.json';
 import { Link } from 'react-router-dom';
 
 const Accueil = () => {
-  const [logements, setLogements] = useState([]);
-
-  // Récupère les données du document json et le stocke dans la variable d'état logements, une seule fois
-  useEffect(() => {
-    setLogements(logementsData);
-  }, []);
+  
+  const logements = logementsData;
   
   return (
     <div className='main'>

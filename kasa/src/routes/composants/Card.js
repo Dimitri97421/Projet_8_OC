@@ -7,6 +7,6 @@ const Card = ({title, cover}) => {
             <img src={cover} alt={title}/>
         </article>
     );
-} 
+}
 
 export default Card;
